@@ -7,45 +7,79 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <h1>JS-IT2 Project</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="ToDo.html">ToDo App</a>
-            <a href="">yui</a>
+<body class="m-0 font-sans bg-gray-100 text-center">
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="m-0 text-2xl">JS-IT2 Project</h1>
+        <nav class="mt-2">
+            <a class="text-white mr-4 hover:underline" href="index.html">Home</a>
+            <a class="text-white mr-4 hover:underline href=" ToDo.html">ToDo App</a>
+            <a class="text-white mr-4 hover:underline href="">yui</a>
         </nav>
     </header>
-    <main>
-        <h2>สวัสดี วิบูลย์</h2>
-        <div class="calculator">
-            <input type="text" id="display" disabled>
-            <div class="buttons">
-                <button onclick="press('7')">7</button>
-                <button onclick="press('8')">8</button>
-                <button onclick="press('9')">9</button>
-                <button onclick="press('/')">/</button>
+    <main class="p-5">
+                <h2>สวัสดี วิบูลย์</h2>
+                <div class="calculator inline-block mt-8 bg-white p-5 rounded-lg shadow">
+                    <input id="display" type="text" class="w-56 h-10 mb-4 text-right text-xl p-2 border rounded" readonly />
+                    <div class="buttons grid grid-cols-4 gap-2.5">
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('7')">7</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('8')">8</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('9')">9</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('/')">/</button>
 
-                <button onclick="press('4')">4</button>
-                <button onclick="press('5')">5</button>
-                <button onclick="press('6')">6</button>
-                <button onclick="press('*')">*</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('4')">4</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('5')">5</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('6')">6</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('*')">*</button>
 
-                <button onclick="press('1')">1</button>
-                <button onclick="press('2')">2</button>
-                <button onclick="press('3')">3</button>
-                <button onclick="press('-')">-</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('1')">1</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('2')">2</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('3')">3</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('-')">-</button>
 
-                <button onclick="press('0')">0</button>
-                <button onclick="press('.')">.</button>
-                <button onclick="calculate()">=</button>
-                <button onclick="press('+')">+</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('0')">0</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('.')">.</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="calculate()">=</button>
+                        <button
+                            class="p-4 text-lg cursor-pointer bg-gray-200 rounded hover:bg-blue-600 hover:text-white"
+                            onclick="press('+')">+</button>
 
-                <button class="clear" onclick="clearDisplay()">C</button>
-            </div>
-        </div>
-    </main>
-    <script src="script.js"></script>
+                        <button
+                            class="col-span-4 p-4 text-lg cursor-pointer bg-red-500 text-white rounded hover:bg-red-600"
+                            onclick="clearDisplay()">C</button>
+                    </div>
+                </div>
+                </main>
+                <script src="script.js"></script>
 </body>
 
 </html>
